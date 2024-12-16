@@ -3,7 +3,7 @@
  "description": "Инструмент по бронированию кабинетов в учебных заведениях",
  "start_url": "/SchoolProj",
  "lang": "ru-RU",
- "display": "standalone",
+ "display": "fullscreen",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
