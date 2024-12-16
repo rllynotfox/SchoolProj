@@ -1,94 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="style.css">
 
-    <title>CabinetLock</title>
+  <title>CabinetLock</title>
 </head>
+
 <body>
-    
-    <header>
-      <button class="settingsb hbutton" id="settings-o">Настройки</button>
-    </header>
 
-    <div class="clist">
-      <div class="c">
-        <div class="cleft">
-          <div class="cnum-wrapper cwrapper">
-            <div class="cnum-title ctitle">Кабинет</div>
-            <div class="cnum">321</div>
-          </div>
-          <div class="cteacher-wrapper cwrapper">
-            <div class="cteacher-title ctitle">Учитель</div>
-            <div class="cteacher">Борисов Сергей Андреевич</div>
-          </div>
-        </div>
-        <button class="cselect cdelete">Удалить</button>
-      </div>
+  <header>
+    <button class="settingsb hbutton" id="settings-o">Настройки</button>
+  </header>
 
-      
-      <div class="c">
-        <div class="cleft">
-          <div class="cnum-wrapper cwrapper">
-            <div class="cnum-title ctitle">Кабинет</div>
-            <div class="cnum">322</div>
-          </div>
-          <div class="cteacher-wrapper cwrapper">
-            <div class="cteacher-title ctitle">Учитель</div>
-            <div class="cteacher cfree">Кабинет свободен</div>
-          </div>
+  <div class="clist">
+    <div class="c">
+      <div class="cleft">
+        <div class="cnum-wrapper cwrapper">
+          <div class="cnum-title ctitle">Кабинет</div>
+          <div class="cnum">321</div>
         </div>
-        <button class="cselect">Занять</button>
+        <div class="cteacher-wrapper cwrapper">
+          <div class="cteacher-title ctitle">Учитель</div>
+          <div class="cteacher" id="teacher1">Платонов Вячеслав Дмитриевич</div>
+        </div>
       </div>
+      <button class="cselect cdelete" id="select1">Удалить</button>
     </div>
 
-    <div class="pass-wrapper" id="pass-wrapper">
-      <div class="pass-inner">
-        <div class="pass-top">
-          <div>Введите пароль</div>
-          <button id="pass-close">X</button>
+
+    <div class="c">
+      <div class="cleft">
+        <div class="cnum-wrapper cwrapper">
+          <div class="cnum-title ctitle">Кабинет</div>
+          <div class="cnum">322</div>
         </div>
-        <input type="password" name="Password" id="pass-input">
+        <div class="cteacher-wrapper cwrapper">
+          <div class="cteacher-title ctitle">Учитель</div>
+          <div class="cteacher cfree">Кабинет свободен</div>
+        </div>
+      </div>
+      <button class="cselect" id="select2">Занять</button>
+    </div>
+  </div>
+
+  <div class="pass-wrapper" id="pass-wrapper">
+    <div class="pass-inner">
+      <div class="pass-top">
+        <div style="padding: .5em">Введите пароль</div>
+        <button id="pass-close">X</button>
+      </div>
+      <div class="pass-bottom">
+        <input type="password" name="Password" id="pass-input" placeholder="Пароль">
         <button id="pass-go">Вход</button>
         <div class="pass-alert" id="pass-alert">Неправильный пароль</div>
       </div>
     </div>
+  </div>
 
-    <script>
-        if ("serviceWorker" in navigator) {
-         window.addEventListener("load", function() {  
-           navigator.serviceWorker.register("sw.js").then(
-             function(registration) {
-               // Registration was successful
-               console.log("ServiceWorker registration successful with scope: ", registration.scope); },
-             function(err) {
-               // registration failed :(
-               console.log("ServiceWorker registration failed: ", err);
-             });
-         });
-        }
-    </script>
+  <div class="settings-wrapper" id="settings-wrapper">
+    <div class="settings-inner">
 
-    <script src="index.js"></script>
+      <div class="settings-top">
+        <div style="padding: .5em">Настройки</div>
+        <button id="settings-close">X</button>
+      </div>
+
+      <div class="settings-bottom">
+
+        <div>
+          <button id="cab-list">Список кабинетов</button>
+        </div>
+        <div>
+  
+          <button id="teacher-list">Список учителей</button>
+        </div>
+        <span style="color: white">Изменить пароль <input id="newpass-field" type="text" placeholder="Введите пароль">
+          <button id="save-password">Сохранить</button></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="cab-wrapper" id="cab-wrapper">
+    <div class="settings-inner">
+
+      <div class="settings-top">
+        <div style="padding: .5em">Кабинеты</div>
+        <button id="cab-close">X</button>
+      </div>
+
+      <div class="settings-bottom" style="color: white">
+
+        <div>Кабинет 312 <button>Удалить</button></div>
+
+        <button>Добавить кабинет</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="teacher-wrapper" id="teacher-wrapper">
+    <div class="settings-inner">
+
+      <div class="settings-top">
+        <div style="padding: .5em">Учителя</div>
+        <button id="teacher-close">X</button>
+      </div>
+
+      <div class="settings-bottom" style="color: white">
+
+        <div>Платонов Вячеслав Дмитриевич <button>Удалить</button></div>
+
+        <button>Добавить учителя</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="tw" id="teachers-wrapper">
+    <div class="settings-inner">
+
+      <div class="settings-top">
+        <div style="padding: .5em">Учителя</div>
+        <button id="teachers-close">X</button>
+      </div>
+
+      <div class="settings-bottom" style="color: white">
+
+        <div>Платонов Вячеслав Дмитриевич <button id="select-teach1">Выбрать</button></div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register("sw.js").then(
+          function (registration) {
+            // Registration was successful
+            console.log("ServiceWorker registration successful with scope: ", registration.scope);
+          },
+          function (err) {
+            // registration failed :(
+            console.log("ServiceWorker registration failed: ", err);
+          });
+      });
+    }
+  </script>
+
+  <script src="index.js"></script>
 </body>
+
 </html>

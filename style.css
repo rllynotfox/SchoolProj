@@ -19,7 +19,81 @@ header {
 	gap: 1em;
 }
 
-.pass-wrapper {
+.pass-inner {
+	background: #18181a;
+	/* padding: 1.5em; */
+	border-radius: 1em;
+}
+
+.settings-inner {
+	background: #18181a;
+	/* padding: 1.5em; */
+	border-radius: 1em;
+}
+
+.settings-top {
+	padding: 1.5em;
+	width: auto;
+	border-bottom: 1px solid #3a3a3a;
+	padding-bottom: 1em;
+	align-items: center;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.pass-top {
+	padding: 1.5em;
+	border-bottom: 1px solid #3a3a3a;
+	padding-bottom: 1em;
+	align-items: center;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.settings-top {
+	padding: 1.5em;
+	border-bottom: 1px solid #3a3a3a;
+	padding-bottom: 1em;
+	align-items: center;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.pass-bottom, .settings-bottom{
+	padding: 1.5em;
+}
+
+#settings-close {
+	background-color: #3a3a3a;
+	border: 0;
+	padding: .5em;
+	border-radius: .4em;
+	font-weight: 900;
+	aspect-ratio: 1/1;
+	height: fit-content;
+	display: flex;
+	align-items: center;
+	color: white;
+}
+
+
+#pass-close, #cab-close, #teachers-close {
+	background-color: #3a3a3a;
+	border: 0;
+	padding: .5em;
+	border-radius: .4em;
+	font-weight: 900;
+	aspect-ratio: 1/1;
+	height: fit-content;
+	display: flex;
+	align-items: center;
+	color: white;
+}
+
+.pass-wrapper, .settings-wrapper, .cab-wrapper, .teacher-wrapper, .tw {
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -37,6 +111,10 @@ header {
 }
 
 .pass-top {
+	color:white
+}
+
+.settings-top {
 	color:white
 }
 
