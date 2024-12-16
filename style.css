@@ -1,0 +1,100 @@
+body {
+
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0;
+	background-color: #18181a;
+	margin: 0;
+}
+
+header {
+	/* background-color: #666; */
+	border-bottom: 2px #3a3a3a solid;
+	padding: 2em;
+	color: white;
+	display: flex;
+
+	gap: 1em;
+}
+
+.pass-wrapper {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #00000099;
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+
+.pass-alert {
+	color: red;
+	display: none
+}
+
+.pass-top {
+	color:white
+}
+
+.hbutton {
+	border-radius: 5px;
+	box-sizing: content-box;
+	padding: 1em;
+	font-size: 1em;
+	font-weight: 600;
+	background-color: #aaaaaa12;
+	color: white;
+	border: 0;
+	/* line-height: normal; */
+	/* letter-spacing: 0.08em; */
+}
+
+.clist {
+	margin: 1em;
+}
+
+.cwrapper {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.ctitle {
+	font-size: 1.2em;
+	color: #2094FF;
+	margin-bottom: .3em;
+}
+
+.cfree {
+	color: #9fd1ff
+}
+
+.c {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 1em;
+	padding-right: 1em;
+	margin-bottom: 1em;
+	border-bottom: 1px solid #3a3a3a;
+}
+
+.cleft {
+	color: white;
+	display: flex;
+}
+
+.cselect {
+	color: white;
+	background-color: transparent;
+	border: 2px solid #2094FF;
+	border-radius: 1em;
+	padding: .8em;
+	height: min-content;
+}
+
+
+
+.cdelete {
+	border-color: red;
+}

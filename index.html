@@ -21,12 +21,58 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css">
 
     <title>CabinetLock</title>
 </head>
 <body>
-    Hello1
+    
+    <header>
+      <button class="settingsb hbutton" id="settings-o">Настройки</button>
+    </header>
 
+    <div class="clist">
+      <div class="c">
+        <div class="cleft">
+          <div class="cnum-wrapper cwrapper">
+            <div class="cnum-title ctitle">Кабинет</div>
+            <div class="cnum">321</div>
+          </div>
+          <div class="cteacher-wrapper cwrapper">
+            <div class="cteacher-title ctitle">Учитель</div>
+            <div class="cteacher">Борисов Сергей Андреевич</div>
+          </div>
+        </div>
+        <button class="cselect cdelete">Удалить</button>
+      </div>
+
+      
+      <div class="c">
+        <div class="cleft">
+          <div class="cnum-wrapper cwrapper">
+            <div class="cnum-title ctitle">Кабинет</div>
+            <div class="cnum">322</div>
+          </div>
+          <div class="cteacher-wrapper cwrapper">
+            <div class="cteacher-title ctitle">Учитель</div>
+            <div class="cteacher cfree">Кабинет свободен</div>
+          </div>
+        </div>
+        <button class="cselect">Занять</button>
+      </div>
+    </div>
+
+    <div class="pass-wrapper" id="pass-wrapper">
+      <div class="pass-inner">
+        <div class="pass-top">
+          <div>Введите пароль</div>
+          <button id="pass-close">X</button>
+        </div>
+        <input type="password" name="Password" id="pass-input">
+        <button id="pass-go">Вход</button>
+        <div class="pass-alert" id="pass-alert">Неправильный пароль</div>
+      </div>
+    </div>
 
     <script>
         if ("serviceWorker" in navigator) {
@@ -41,6 +87,8 @@
              });
          });
         }
-        </script>
+    </script>
+
+    <script src="index.js"></script>
 </body>
 </html>
